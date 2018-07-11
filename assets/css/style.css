@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#startMenu {
+    background: linear-gradient(#373b44, #4286f4);
+    width: 95%;
+    height: 625px;
+    margin-top: 60px;
+    padding: 15px;
+    position: relative;
+}
+
+button.btn.btn-secondary {
+    bottom: 200px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button.btn.btn-primary {
+    bottom: 200px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.choices {
+    position: relative;
+    bottom: 250px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+#btn0, 
+#btn1, 
+#btn2, 
+#btn3 {
+    background-color: white;
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    border: 5px;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+#btn0:hover, 
+#btn1:hover, 
+#btn2:hover, 
+#btn3:hover {
+    cursor: pointer;
+    background-color: #4286f4; 
+}
+
+#btn0:focus, 
+#btn1:focus, 
+#btn2:focus, 
+#btn3:focus {
+    outline: 0;
+}
+
+i {
+    padding: 2px;
+}
+
+#timer {
+    position: relative;
+    bottom: 500px;
+    text-align: center;
+    color: white;
+}
+
