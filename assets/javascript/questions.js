@@ -1,3 +1,9 @@
-var questions = [
-    ("What is the capital of Spain?" ["Zaragoza", "Madrid", "Granada", "Barcelona"], "Madrid"),
-];
+function Question(text, choices, answer) {
+  this.text=text;
+  this.choices = choices;
+  this.answer = answer;
+}
+
+Question.prototype.correctAnswer = function(choice) {
+  return choice === this.answer;
+}
