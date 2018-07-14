@@ -4,7 +4,7 @@
     width: 600px;
     height: 500px;
     margin: 0 auto;
-    background: linear-gradient(to right, lightskyblue , pink );
+    background: linear-gradient(to right, #00c6ff , #0072ff );
     padding: 100px;
     border-radius: 50px;
     box-shadow: 10px 15px 5px grey;
@@ -70,3 +70,31 @@
     font-size: 30px;
 }
 
+#gameInstructions,
+#start {
+    position: relative;
+}
+
+#gameInstructions {
+    background: linear-gradient(#00416A, #E4E5E6);
+    width: 650px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#start {
+    font-size: 17pt;
+    background: #0072ff;
+    border: 0;
+    width: 120px;
+    height: 40px;
+    margin-left: 320px;
+    bottom: 200px;
+}
+
+#start:hover {
+    background: #52bab3;
+    color: white;
+    cursor: pointer;
+}

@@ -1,3 +1,46 @@
+// Hide/Show
+$('.grid').hide();
+
+
+$('#start').on('click', gameStart);
+
+// $('#start').on('click', function(){
+//     $('.grid').show();
+//     $('#start').hide();
+// });
+
+function gameStart() {
+    $('.grid').show();
+    $('#gameInstructions').hide();
+    $('#start').hide();
+    timer();
+}
+
+
+
+// Code for timer
+
+var timesUp;
+var timerRemaining = 30;
+var timerHTML = $('#timer');
+
+function timer() {
+    timerRemaining = 30;
+    timerHTML.text(`Time Remaining: ${timerRemaining}`);
+    timesUp = setInterval(timeDecrease, 1000);
+};
+
+function timeDecrease() {
+    timerRemaining = timerRemaining - 1;
+    timerHTML.text(`Time Remaining: ${timerRemaining}`);
+    if ( timerRemaining == 0 ) {
+        clearInterval(timesUp);
+    }
+}
+
+// console.log(timerRemaining)
+
+
 function populate () {
     if(quiz.isEnded() ) {
         showScores();

@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fact Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+   
 </head>
-<body>
+<body background="http://thumbs.dreamstime.com/x/flags-all-world-countries-8657470.jpg">
+    <!-- Game Instructions -->
+    <div id="gameInstructions" style="text-align: center">
+    <h1>Trivia Game</h1>
+    <p><strong>Instructions:</strong></p>
+
+    <p>You will have 30 seconds to answer all the questions. The game consists of 14 questions total. Click the Start Button to begin the quiz</p>
+
+    </div>
+
+    <button id="start">Start</button>
+
+     <!-- Game Instructions -->
+
+
+    <!-- The actual game -->
     <div class="grid">
         <div id="quiz">
             <h1>Quiz</h1>
             <hr style="margin-bottom: 20px">
+
+            <div id="timer" style="text-align: center"></div>
+
 
             <p id="question"></p>
 
@@ -28,7 +47,12 @@
             </footer>
         </div>
     </div>  
+     <!-- The actual game -->
     
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
     <script src="assets/javascript/questions.js"></script>
     <script src="assets/javascript/app.js"></script>

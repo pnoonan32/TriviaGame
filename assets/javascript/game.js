@@ -19,3 +19,5 @@ Quiz.prototype.guess = function(answer) {
 
     this.questionIndex++;
 }
+
+// var firstQuiz = new Quiz([])
